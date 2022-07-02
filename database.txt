@@ -1,0 +1,274 @@
+-- phpMyAdmin SQL Dump
+-- 
+version 4.6.4
+-- 
+https://www.phpmyadmin.net/
+--
+--
+Host: 127.0.0.1
+-- 
+Generation Time: Nov 10, 2016 at 02:12 PM
+-- 
+Server version: 5.7.14
+-- 
+PHP Version: 5.6.25
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- 
+Database: `gowtham`
+--
+
+CREATE DATABASE IF NOT EXISTS `gowtham` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `gowtham`;
+
+-- 
+--------------------------------------------------------
+
+--
+-- 
+
+
+Table structure for table `chennai`
+--
+
+
+CREATE TABLE `chennai` (
+  `name` varchar(20) DEFAULT NULL,
+ 
+  `regno` varchar(20) DEFAULT NULL,
+
+  `password` varchar(20) DEFAULT NULL,
+ 
+  `gender` varchar(6) DEFAULT NULL,
+
+  `dob` varchar(15) DEFAULT NULL,
+ 
+  `program` varchar(20) DEFAULT NULL,
+
+  `nation` varchar(20) DEFAULT NULL,
+ 
+  `lang` varchar(20) DEFAULT NULL,
+
+  `bg` varchar(20) DEFAULT NULL,
+
+  `email` varchar(40) DEFAULT NULL,
+
+  `addr` varchar(20) DEFAULT NULL,
+
+  `phno` varchar(20) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+--
+-- Dumping data for table `chennai`
+--
+
+INSERT INTO `chennai` (`name`, `regno`, `password`, `gender`, `dob`, `program`, `nation`, `lang`, `bg`, `email`, `addr`, `phno`) VALUES
+
+('surya', 'surya', 'sunny', 'Female', '21-07-1995', 'INTER', 'african', 'tamil', 'AB+', 'surya@gmail.com', 'Tanuku', '7974955331');
+
+-- --------------------------------------------------------
+
+--
+--
+
+
+ Table structure for table `chennai2`
+--
+
+
+CREATE TABLE `chennai2` (
+  `name` varchar(20) DEFAULT NULL,
+
+  `gender` varchar(6) DEFAULT NULL,
+
+  `dob` varchar(15) DEFAULT NULL,
+
+  `program` varchar(20) DEFAULT NULL,
+
+  `nation` varchar(20) DEFAULT NULL,
+
+  `lang` varchar(20) DEFAULT NULL,
+
+  `bg` varchar(20) DEFAULT NULL,
+
+  `email` varchar(40) DEFAULT NULL,
+
+  `addr` varchar(20) DEFAULT NULL,
+
+  `phno` varchar(20) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `chennai2`
+--
+
+INSERT INTO `chennai2` (`name`, `gender`, `dob`, `program`, `nation`, `lang`, `bg`, `email`, `addr`, `phno`) VALUES
+('gowtham', 'Male', '25-06-1997', 'degree', 'two', 'vintapiler', 'B+', 'potureddi@gmail.com', 'Tanuku', '9943110999');
+
+-- 
+--------------------------------------------------------
+
+--
+-- 
+
+
+Table structure for table `vellore`
+--
+
+
+CREATE TABLE `vellore` (
+  `name` varchar(20) DEFAULT NULL,
+
+  `regno` varchar(20) DEFAULT NULL,
+
+  `password` varchar(20) DEFAULT NULL,
+
+  `gender` varchar(6) DEFAULT NULL,
+
+  `dob` varchar(15) DEFAULT NULL,
+
+  `program` varchar(20) DEFAULT NULL,
+
+  `nation` varchar(20) DEFAULT NULL,
+
+  `lang` varchar(20) DEFAULT NULL,
+
+  `bg` varchar(20) DEFAULT NULL,
+
+  `email` varchar(40) DEFAULT NULL,
+
+  `addr` varchar(20) DEFAULT NULL,
+
+  `phno` varchar(20) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vellore`
+--
+
+INSERT INTO `vellore` (`name`, `regno`, `password`, `gender`, `dob`, `program`, `nation`, `lang`, `bg`, `email`, `addr`, `phno`) 
+VALUES
+
+('Ravi', 'rajeev', 'sravan', 'Male', '25-06-1997', 'degree', 'indian', 'telugu', 'B+', 'potureddigowtham@gmail.com', 'vijayawada', '9994032224'),
+
+('pavani', 'abbavaram', 'booking', 'Female', '7-11-1996', 'inter', 'indian', 'telugu', 'B+', 'pavanireddy373@gmail.com', 'pileru', '9994337370'),
+
+('shravya', 'shivani', 'useless', 'Male', '4-11-1987', 'btech', 'african', 'tamil', 'O+', 'shivanisravya82@gmail.com', 'Tanuku', '9952393488'),
+
+('aadarsh', 'aadarsh', 'aadarsh', 'Male', '25-06-1997', 'msse', 'indian', 'chittoor', 'AB+', 'aadarshgeedhi@gmail.com', 'ccdoffice', '8978897898');
+
+--
+ --------------------------------------------------------
+
+--
+-- 
+
+
+Table structure for table `vellore1`
+--
+
+
+CREATE TABLE `vellore1` (
+  `name` varchar(20) DEFAULT NULL,
+
+  `regno` varchar(20) DEFAULT NULL,
+
+  `password` varchar(20) DEFAULT NULL,
+
+  `gender` varchar(6) DEFAULT NULL,
+
+  `dob` varchar(15) DEFAULT NULL,
+
+  `program` varchar(20) DEFAULT NULL,
+
+  `nation` varchar(20) DEFAULT NULL,
+
+  `lang` varchar(20) DEFAULT NULL,
+
+  `bg` varchar(20) DEFAULT NULL,
+
+  `email` varchar(20) DEFAULT NULL,
+
+  `addr` varchar(20) DEFAULT NULL,
+
+  `phno` varchar(20) DEFAULT NULL
+) 
+ ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vellore1`
+--
+
+INSERT INTO `vellore1` (`name`, `regno`, `password`, `gender`, `dob`, `program`, `nation`, `lang`, `bg`, `email`, `addr`, `phno`) 
+VALUES
+
+('sravan', 'rajeev', 'sravan', 'Female', '21-07-1995', 'degree', 'vijayawada', 'chittoor', 'B+', 'sravan@gmail.com', 'vijayawada', '9943110999'),
+
+('Gowtham', 'rajeev', 'sravan', 'Female', '25-06-1997', 'degree', 'vijayawada', 'chittoor', 'B+', 'poturedd@gmail.com', 'Tanuku', '9943110999'),
+
+('gowtham', '', '', 'Male', '25-06-1997', 'INTER', 'two', 'vintapiler', 'B+', 'potureddi@gmail.com', 'Tanuku', '9994032224');
+
+-- --------------------------------------------------------
+
+--
+-- 
+
+
+
+Table structure for table `vellore2`
+--
+
+
+CREATE TABLE `vellore2` (
+  `name` varchar(20) DEFAULT NULL,
+
+  `gender` varchar(6) DEFAULT NULL,
+
+  `dob` varchar(15) DEFAULT NULL,
+
+  `program` varchar(20) DEFAULT NULL,
+
+  `nation` varchar(20) DEFAULT NULL,
+
+  `lang` varchar(20) DEFAULT NULL,
+
+  `bg` varchar(20) DEFAULT NULL,
+
+  `email` varchar(40) DEFAULT NULL,
+
+  `addr` varchar(20) DEFAULT NULL,
+
+  `phno` varchar(20) DEFAULT NULL
+) 
+ ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vellore2`
+--
+
+INSERT INTO `vellore2` (`name`, `gender`, `dob`, `program`, `nation`, `lang`, `bg`, `email`, `addr`, `phno`) 
+VALUES
+
+('pavani', 'Female', '7-11-1996', 'inter', 'pileru', 'vijayawada', 'B+', 'pavanireddy373@gmail.com', 'pileru', '9994337370'),
+
+('shravya', 'Male', '4-11-1987', 'btech', 'tirupati', 'vellore', 'O+', 'shivanisravya82@gmail.com', 'tirupati', '9952393488'),
+
+('sravya', 'Female', '24-10-1996', 'msse', 'sdwsd', 'dsddw', 'O+', 'shivanisravya82@gmail.com', 'xsSDwd', '9952393488'),
+
+('prasanna', 'Female', '25-06-1997', 'gyjtjy', 'reger', 'gunutr', 'A+', 'potureddigowtham@gmail.com', 'vellore', '9952393488');
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
