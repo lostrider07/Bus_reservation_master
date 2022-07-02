@@ -1,6 +1,6 @@
 # bus-reservation
-bus reservation
 
+INTRODUCTION
 
 Online Booking System online software-based cloud. This scheme would assist clients book a travel seat, book bus and book hotels. This scheme would also assist the owner in managing coaches, staff, customers, services, etc.
  
@@ -20,3 +20,8 @@ User does not need to visit any office. To use our system, they just need the in
 - User information module
 - Sending email module
 - Change password module
+
+LANGUAGES USED
+
+Frontend: HTML, CSS, JS
+Backend: PHP
